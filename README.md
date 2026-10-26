@@ -1,6 +1,6 @@
-# SGC · Sistema de Gestión Catastral — landing
+# Cadastrum · Gestión catastral multipropósito — landing
 
-Página pública del SGC: https://jiberquintero.github.io/sgc-landing/
+Página pública de Cadastrum: https://jiberquintero.github.io/sgc-landing/
 
 Sitio estático (un `index.html` y sus imágenes) publicado con GitHub Pages. Las
 pantallas son del sistema real y muestran a San Fernando de la Sabana, un

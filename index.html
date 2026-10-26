@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SGC · Sistema de Gestión Catastral</title>
-<meta name="description" content="Sistema de Gestión Catastral para gestores y operadores en Colombia: conservación con el ciclo legal completo, actualización con comisiones en campo, difusión, observatorio inmobiliario y LADM-COL nativo.">
+<title>Cadastrum · Gestión catastral multipropósito</title>
+<meta name="description" content="Cadastrum: gestión catastral para gestores y operadores en Colombia: conservación con el ciclo legal completo, actualización con comisiones en campo, difusión, observatorio inmobiliario y LADM-COL nativo.">
 <link rel="canonical" href="https://jiberquintero.github.io/sgc-landing/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230a7d52'/%3E%3Cpath d='M7 21.5 13 8l5.5 9.5L25 11' fill='none' stroke='%238ff0c2' stroke-width='2.2' stroke-linejoin='round' stroke-linecap='round'/%3E%3Cpath d='M7 21.5h18' stroke='%23e9c45a' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#0d211b">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CO">
-<meta property="og:title" content="SGC · Sistema de Gestión Catastral">
-<meta property="og:description" content="Sistema de Gestión Catastral para gestores y operadores en Colombia: conservación con el ciclo legal completo, actualización con comisiones en campo, difusión, observatorio inmobiliario y LADM-COL nativo.">
+<meta property="og:title" content="Cadastrum · Gestión catastral multipropósito">
+<meta property="og:description" content="Cadastrum: gestión catastral para gestores y operadores en Colombia: conservación con el ciclo legal completo, actualización con comisiones en campo, difusión, observatorio inmobiliario y LADM-COL nativo.">
 <meta property="og:url" content="https://jiberquintero.github.io/sgc-landing/">
 <meta property="og:image" content="https://jiberquintero.github.io/sgc-landing/img/compartir.jpg">
 <meta property="og:image:width" content="1200">
@@ -343,9 +343,9 @@ fieldset { border: 0; padding: 0; margin: 0; }
 <body>
 <header class="barra">
   <div class="envoltura">
-    <a class="marca" href="#inicio" aria-label="SGC, Sistema de Gestión Catastral">
+    <a class="marca" href="#inicio" aria-label="Cadastrum, gestión catastral multipropósito">
       <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0a7d52"/><path d="M7 21.5 13 8l5.5 9.5L25 11" fill="none" stroke="#8ff0c2" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M7 21.5h18" stroke="#e9c45a" stroke-width="2.2" stroke-linecap="round"/></svg>
-      <span>SGC<small>Sistema de Gestión Catastral</small></span>
+      <span>Cadastrum<small>Gestión catastral multipropósito</small></span>
     </a>
     <nav aria-label="Secciones">
       <a href="#momento">El momento</a>
@@ -663,7 +663,7 @@ fieldset { border: 0; padding: 0; margin: 0; }
 
 <footer class="pie">
   <div class="envoltura">
-    <span class="marca"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0a7d52"/><path d="M7 21.5 13 8l5.5 9.5L25 11" fill="none" stroke="#8ff0c2" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M7 21.5h18" stroke="#e9c45a" stroke-width="2.2" stroke-linecap="round"/></svg><span>SGC<small>Sistema de Gestión Catastral</small></span></span>
+    <span class="marca"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#0a7d52"/><path d="M7 21.5 13 8l5.5 9.5L25 11" fill="none" stroke="#8ff0c2" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M7 21.5h18" stroke="#e9c45a" stroke-width="2.2" stroke-linecap="round"/></svg><span>Cadastrum<small>Gestión catastral multipropósito</small></span></span>
     <p>Las pantallas de esta página son del sistema real y muestran a San Fernando de la Sabana, un municipio ficticio de demostración. Las fotografías de ambiente fueron generadas con inteligencia artificial.</p>
     <div class="fuentes">
       <span>Cifras del país:</span>
@@ -714,7 +714,7 @@ fieldset { border: 0; padding: 0; margin: 0; }
     const v = (id) => document.getElementById(id).value.trim();
     const intereses = [...forma.querySelectorAll('input[name="interes"]:checked')].map((c) => c.value);
     const lineas = [
-      "Solicitud de demostración del SGC",
+      "Solicitud de demostración de Cadastrum",
       "",
       "Nombre: " + v("nombre") + (v("cargo") ? " (" + v("cargo") + ")" : ""),
       "Entidad: " + v("entidad"),
@@ -727,7 +727,7 @@ fieldset { border: 0; padding: 0; margin: 0; }
     if (v("mensaje")) lineas.push("", v("mensaje"));
     document.getElementById("abrir-correo").href =
       "mailto:jiberquintero@gmail.com?subject=" +
-      encodeURIComponent("Solicitud de demostración del SGC · " + v("entidad")) +
+      encodeURIComponent("Solicitud de demostración de Cadastrum · " + v("entidad")) +
       "&body=" + encodeURIComponent(lineas.join(String.fromCharCode(10)));
     texto.textContent = lineas.join("\n");
     forma.hidden = true;
